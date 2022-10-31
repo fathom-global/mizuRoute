@@ -7,23 +7,16 @@
 
 # Define the Fortran Compiler
 
-CC=pgf90
+CC=gfortran
 
 ifeq "$(CC)" "gfortran"
- NCDF_PATH=/opt/netcdf4-gcc
-endif
-
-ifeq "$(CC)" "ifort"
- NCDF_PATH = /opt/netcdf4-intel
-endif
-
-ifeq "$(CC)" "pgf90"
- NCDF_PATH = /opt/netcdf4-pgi
+ NCDF_PATH=/usr/lib/x86_64-linux-gnu
+ INCLUDE_PATH = /usr#${IN_PATH}
 endif
 
 LIBNETCDF = -Wl,-rpath,$(NCDF_PATH)/lib \
             -L$(NCDF_PATH)/lib -lnetcdff -lnetcdf
-INCNETCDF = -I$(NCDF_PATH)/include
+INCNETCDF = -I$(INCLUDE_PATH)/include
 
 # define flags
 ifeq "$(CC)" "gfortran"
