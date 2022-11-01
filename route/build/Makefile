@@ -16,7 +16,7 @@ FC  = gnu
 FC_EXE = gfortran
 
 # Define the executable
-EXE = mizu.exe
+EXE = mizu_openMP.exe
 
 # Define optional setting
 # fast:      Enables optimizations
@@ -25,7 +25,7 @@ EXE = mizu.exe
 MODE = debug
 
 # define open MP option (put yes to activate OMP)
-isOpenMP = no
+isOpenMP = yes
 
 # Define core directory below which everything resides
 # parent directory of the 'build' directory
