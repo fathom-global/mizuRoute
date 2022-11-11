@@ -598,7 +598,7 @@ contains
    integer(i4b),                   intent(in)  :: nSeg
    type(var_ilength), allocatable, intent(in)  :: structNTOPO_in(:)  ! network topology
    type(subdomain),                intent(in)  :: domains_omp(:)     ! domain decomposition data structure (maximum domain is set to maxDomain)
-   integer(i4b)                                :: nDomain_omp
+   integer(i4b),                   intent(in)  :: nDomain_omp
    ! Output variables
    type(subbasin_omp),allocatable, intent(out) :: river_basin_out(:)!
    integer(i4b),                   intent(out) :: ierr
