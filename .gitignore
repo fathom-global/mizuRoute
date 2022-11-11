@@ -35,7 +35,7 @@ lib
 manage_externals
 
 # other files
+*.nc
 *.local
 *bak*
 *tmp*
-
