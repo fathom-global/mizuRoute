@@ -2,11 +2,24 @@
 [![Documentation Status](https://readthedocs.org/projects/mizuroute/badge/?version=main)](https://mizuroute.readthedocs.io/en/latest/?badge=main)
 
 # mizuRoute
-Stand-alone mizuRoute is a post-processor of runoff output from a hydrologic model or Land surface model to produce streamflow estimates in the river network provided by a user. The tool was developed for the large scale, network based river routing (e.g., river network over contiguous United States), but works for gridded river network as well.
+## Table of Contents
+
+- [About](#about)
+- [Getting Started and Usage](#getting_started_and_usage)
+- [Tests or Validation](#tests)
+- [License](#license)
+- [Get Help](#help)
+
+## About <a name = "about"></a>
+
+Stand-alone mizuRoute is a post-processor of runoff output from a hydrologic model or Land surface model to produce streamflow estimates in the river network provided by a user. The tool was developed for the large scale, network based river routing (e.g., river network over contiguous United States), but works for gridded river network as well. mizuRoute is a model developped principally at NCAR and published under a **GPLv3 license**.
 
 Technical documentation is now being built on [readthedocs](https://mizuroute.readthedocs.io/en/main/)
 
-# To get started
+## Getting Started and Usage <a name = "#getting_started_and_usage"></a>
+
+### Prerequisites and installation
+
 1. Obtaining mizuRoute package. Just to use the tool, download the package by clicking “Download Zip” button on right column. 
 
 2. Fortran compiler. Since we do not use any compiler-specific extensions, mizuRoute should be complied with any Fortran compilers. We have successfully used the intel Fortran compiler (ifort), the GNU Fortran compiler (gfortran), and PGI fortran compiler (pgf90). If the user does not have a Fortran compiler, [gfortran](https://gcc.gnu.org/wiki/GFortran) can be installed for free. The easiest way is to use a package manager. Which package manager depends on your machine flavor. 
@@ -36,6 +49,19 @@ The user may use netcdf test code to check if NetCDF libraries are properly inst
 
 If you get this far then mizuRoute is built correctly and functional. Now, the user will have to generate input data, runoff data, river network topology and runoff mapping data (depending on input runoff option). Please look at [readthedocs](https://mizuroute.readthedocs.io/en/develop/) to learn more about mizuRoute input data. 
 
-The user are encouraged to start with example data to get familiarize the process. testCase are being now developed and posted separately.
+### How to run the code
 
-For real application, getting river network data and mapping data in netCDF format correctly take work because this most likely requires GIS process and convert shapefile to netCDF). 
+Nans to add examples of code here.
+
+## Tests or Validation<a name = "tests"></a>
+
+Scripts to evaluate mizuRoute simulations driven by FUSE are provided by the separate [fuse_deployment](https://github.com/fathom-global/fuse_deployments) repo.
+
+## License <a name = "license"></a>
+
+mizuRoute is distributed under the GNU Public License Version 3. For details see the file `LICENSE` in the root directory or visit the [online version](http://www.gnu.org/licenses/gpl-3.0.html).
+
+## Maintainers<a name = "help"></a>
+
+Naoki Mizukami (mizukami@ucar.edu) - Nans Addor
+
