@@ -51,7 +51,14 @@ If you get this far then mizuRoute is built correctly and functional. Now, the u
 
 ### How to run the code
 
-Nans to add examples of code here.
+Once you have generated the executable, you can run mizuRoute by specifying a control file, e.g.
+
+```
+~/mizuRoute/route/bin/mizu.exe /netapp/data/hydrology/mizuRoute/fuse_conus/settings/fuse_mizu_1979-2020.control
+
+```
+
+The control file defines all the modelling options, including the location of the input files, the routing scheme to be used, the start and end dates of the simulations, and the runoff mapping file. See `/netapp/data/hydrology/mizuRoute/fuse_conus/settings` for a few examples of control files.
 
 ## Tests or Validation<a name = "tests"></a>
 
